@@ -8,5 +8,5 @@ import com.questionbank.model.Question;
 public interface IQuestionBankService {
 	public void addQuestionWithAnswer(String question, String answer);
 	public boolean deleteQuestionWithAnswerById(int id);
-	public TreeMap<Integer, Question> getQuestionsWithAnswers(String type);
+	public TreeMap<Integer, Question> getQuestionsWithAnswers();
 }

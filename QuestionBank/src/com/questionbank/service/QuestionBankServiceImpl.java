@@ -17,7 +17,7 @@ public class QuestionBankServiceImpl implements IQuestionBankService {
 	}
 
 	@Override
-	public TreeMap<Integer, Question> getQuestionsWithAnswers(String type) {
+	public TreeMap<Integer, Question> getQuestionsWithAnswers() {
 		return Store.getStore();
 	}
 
