@@ -1,0 +1,22 @@
+package com.questionbank.store;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+import com.questionbank.model.Question;
+
+public class QuestionBankStore {
+
+	private static TreeMap<Integer, Question> store;
+
+	public static TreeMap<Integer, Question> getStore() {
+		return store;
+	}
+	
+	public void saveQuestion(Question question) {
+		store.put(store.lastKey() + 1 , question);
+	}
+	
+	
+	
+}

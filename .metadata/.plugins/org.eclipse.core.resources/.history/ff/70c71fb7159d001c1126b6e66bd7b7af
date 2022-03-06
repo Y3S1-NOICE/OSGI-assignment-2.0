@@ -1,0 +1,10 @@
+package com.questionbank.store;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+public class QuestionBankStore {
+
+	private static TreeMap<Integer, HashMap<String, String>> questionsWithAnswers;
+	
+}

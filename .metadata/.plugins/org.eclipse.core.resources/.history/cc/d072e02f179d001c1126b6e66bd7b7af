@@ -1,0 +1,28 @@
+package com.questionbank.service;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+import com.questionbank.store.QuestionBankStore.questionsWithAnswers;
+
+public class QuestionBankServiceImpl implements IQuestionBankService {
+
+	@Override
+	public void addQuestionWithAnswer(String question, String answer) {
+		QuestionBankStore
+		
+	}
+
+	@Override
+	public void deleteQuestionWithAnswerById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public TreeMap<Integer, HashMap<String, String>> getQuestionsWithAnswers(String type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

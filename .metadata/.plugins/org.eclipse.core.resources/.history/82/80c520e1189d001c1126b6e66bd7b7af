@@ -1,0 +1,31 @@
+package com.questionbank.store;
+
+import java.util.TreeMap;
+
+import com.questionbank.model.Question;
+
+public class Store {
+
+	private static TreeMap<Integer, Question> store;
+
+	public static TreeMap<Integer, Question> getStore() {
+		return store;
+	}
+	
+	public void saveQuestion(Question question) {
+		store.put(store.lastKey() + 1 , question);
+	}
+	
+	public boolean removeQuestionById(int id) {
+		if (store.containsKey(id)) {
+			store.remove(id);
+			for (int qid = id; store.containsKey(qid + 1); qid++) {
+				store.put(qid,store.get(qid + 1));
+			}
+			store.remove(store.size());
+			return true;
+		}
+		return false;
+	}
+	
+}

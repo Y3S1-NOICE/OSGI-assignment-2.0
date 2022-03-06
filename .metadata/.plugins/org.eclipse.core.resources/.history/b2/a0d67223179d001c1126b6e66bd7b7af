@@ -1,0 +1,10 @@
+package com.questionbank.service;
+
+import java.util.HashMap;
+import java.util.TreeMap;
+
+public interface IQuestionBankService {
+	public void addQuestionWithAnswer(String question, String answer);
+	public void deleteQuestionWithAnswerById(int id);
+	public TreeMap<Integer, HashMap<String, String>> getQuestionsWithAnswers(String type);
+}
