@@ -13,7 +13,7 @@ public class ContentStore {
 	}
 	
 	public static void saveContent(Content content) {
-		CONTENT_STORE.put(CONTENT_STORE.lastKey() + 1 , content);
+		CONTENT_STORE.put(CONTENT_STORE.size() + 1 , content);
 	}
 	
 	public static boolean removeContentById(int id) {

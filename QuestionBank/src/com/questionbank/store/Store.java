@@ -2,7 +2,7 @@ package com.questionbank.store;
 
 import java.util.TreeMap;
 
-import com.questionbank.model.Question;
+import com.questionbank.service.Question;
 
 public class Store {
 
@@ -13,7 +13,7 @@ public class Store {
 	}
 	
 	public static void saveQuestion(Question question) {
-		STORE.put(STORE.lastKey() + 1 , question);
+		STORE.put(STORE.size() + 1 , question);
 	}
 	
 	public static boolean removeQuestionById(int id) {

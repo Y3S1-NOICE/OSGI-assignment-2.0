@@ -1,4 +1,4 @@
-package com.questionbank.model;
+package com.questionbank.service;
 
 public class Question {
 	private String question;
